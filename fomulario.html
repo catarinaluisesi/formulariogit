@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formulário</title>
+    <link rel="stylesheet" href="css/formulariocss.css">
+
+    
+</head>
+<body>
+  
+    <form action="formulario.html" method="get">
+       
+        <label for="fname">Nome: </label>
+        <input type="text" id="fname" name="fname"> <br>
+        
+        <label for="date"> Data De Nascimento: </label>
+        <input type="text" id="date" name="date"> <br>
+        
+        <label for="sex"> Sexo:  </label>
+        <input type="radio" id="sex" name="sex">
+       
+        <label for="masc"> Masc  </label>
+        <input type="radio" id="masc" name="sex">
+
+        <label for="fem">  Fem   </label>
+        <input type="radio" id="fem" name="sex"> 
+
+        <label for="NInformar">Prefiro não informar</label> <br>
+
+        <label for="End"> Endereço: </label> <br>
+
+        <label for="log"> Logradouro:</label>
+        <input type="text" id="log" name="log"> <br>
+
+        <label for="bairro"> Bairro:</label>
+        <input type="text" id="bairro" name="bairro"> <br>
+
+        <label for="city"> Cidade: </label>
+        <input type="text" id="city" name="city"> <br>
+
+        <label for="UF">   UF:  </label>
+        
+         <select name="UF" id="UF">
+             <option value="DF"> DF </option> 
+             <option value="MA"> MA </option>
+             <option value="AM"> AM </option> 
+             <option value="SC"> SC </option> 
+             <option value="SP"> SP </option>
+         </select> <br>
+ 
+         <label for="email"> Email:  </label>
+         <input type="text" id="email" name="email"> <br>
+
+         <input type="submit" value="Limpar"> 
+         <input type="reset" value="Enviar">
+         
+
+
+    </form>
+</body>
+</html>

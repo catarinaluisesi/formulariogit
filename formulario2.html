@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+ 
+<html>
+ <head>
+ <title> Formulário em HTML </title>
+ <meta name="description" content="Formulários em HTML">
+ <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+ </head>
+
+ <body>
+  <h1> Seja Bem Vindo(a)</h1> 
+  <h2> Preencha o formulário abaixo para participar da nossa atividade</h2><br/>
+
+<form action="formulario1.html" method="post">
+
+<!-- DADOS PESSOAIS-->
+<fieldset>
+ <legend>Dados Pessoais</legend>
+ <table cellspacing="10">
+  <tr>
+   <td>
+    <label for="nome">Nome: </label>
+   </td>
+   <td align="left">
+    <input type="text" name="email">
+   </td>
+   <td>
+    <label for="sobrenome">Sobrenome: </label>
+   </td>
+   <td align="left">
+    <input type="text" name="sobrenome">
+   </td>
+  </tr>
+  <tr>
+   <td>
+    <label>Nascimento: </label>
+   </td>
+   <td align="left">
+    <input type="text" name="dia" size="2" maxlength="2" value="dd"> 
+   <input type="text" name="mes" size="2" maxlength="2" value="mm"> 
+   <input type="text" name="ano" size="4" maxlength="4" value="aaaa">
+   </td>
+  </tr>
+  <tr>
+    <td>
+        <label> E-mail: </label>
+    </td>
+    <td align="left">
+        <input type="email" name="email">
+    </td>
+  </tr>
+  <tr>
+    <td>
+        <label> Telefone:</label>
+    </td>
+    <td align="left">
+        <input type="text" name="number" size="11" maxlength="11" value="(00)00000-0000">
+    </td>
+  </tr>
+ </table>
+</fieldset>
+
+<br />
+<!-- DADOS ACADÊMICOS -->
+<fieldset>
+ <legend>Dados Acadêmicos</legend>
+ <table cellspacing="10">
+
+  <tr>
+   <td>
+    <label for="Curso"> Curso: </label>
+   </td>
+   <td align="left">
+    <select name="Curso" id="Curso">
+             <option value="ADS"> ADS </option> 
+             <option value="GTI"> GTI </option>
+             <option value="SI"> SI </option> 
+         </select> 
+         <br>
+
+   </td>
+  </tr>
+ 
+  <tr>
+    <td>
+        <label for="Semestre"> Semestre:  </label>
+       
+        <label for="1º"> 1º  </label>
+        <input type="radio" id="1º" name="semestre">
+
+        <label for="2º">  2º   </label>
+        <input type="radio" id="2º" name="semestre"> 
+
+        <label for="3º"> 3º </label>
+        <input type="radio" id="3º" name="semestre">
+
+        <label for="4º"> 4º </label>
+        <input type="radio" id="4º" name="semestre">
+
+        <label for="5º"> 5º </label>
+        <input type="radio" id="5º" name="semestre">
+
+    </td>
+  </tr>
+ </table>
+</fieldset>
+<br />
+
+<!-- DADOS LABORAIS -->
+<fieldset>
+ <legend>Dados Laborais</legend>
+ <table cellspacing="10">
+  <tr>
+   <td>
+    <label for="trabalho"> Trabalha? </label>
+   </td>
+   <td align="left">
+    Sim <input type="checkbox" id="sim" name="trabalho" value="sim"> 
+    <br>
+    Não <input type="checkbox" id="não" name="trabalho" value="não"> 
+    <br>
+<tr>
+    <td>
+        <label for="Local de Trabalho"> Local de Trabalho:</label>
+    </td>
+    <td align="left">
+        <input type="text" id="local" name="local">
+</tr>
+<tr>
+    <td>
+        <label for="Descreva sua Experiência"> Descreva sua Experiência: </label>
+    </td>
+    <td align="left">
+    <textarea placeholder=" Digite sua mensagem">
+Digite sua mensagem...
+    </textarea>
+    <br>
+    </td>
+</tr>
+<tr>
+    <td>
+<input type="submit">
+<input type="reset" value="Limpar">
+    </td>
+</tr>
+</form>
+
+ </body>
+</html>
